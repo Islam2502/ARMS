@@ -14,8 +14,8 @@ const body = document.querySelector("body"),
 
     
     if (body.classList.contains("dark")) {
-        modeText.innerText = "Light Mode"
+        modeText.innerText = "Светлая тема"
     } else {
-        modeText.innerText = "Dark Mode"
+        modeText.innerText = "Темная тема"
     }
     })
