@@ -180,6 +180,7 @@ body.dark .sidebar.close header .toggle {
     border-radius: 6px;
     border: none;
     background: var(--primary-color-light);
+    font-size: 16px;
 }
 
 .sidebar li a {
@@ -398,6 +399,66 @@ table tbody tr td:last-child {
 
 .requested-docs {
     min-width: 400px;
+}
+
+div .search-panel {
+    display: flex;
+    /* padding-left: 30px;
+    padding-right: 30px; */
+    /* background: var(--primary-color-light); */
+    margin-left: 18px;
+    margin-right: 18px;
+
+}
+
+
+.search-mini-box {
+    display: flex;
+    background: var(--primary-color-light);
+    border: 6px;
+    border-radius: 10px;
+}
+
+.search-panel i {
+    background: var(--primary-color-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 60px;
+    font-size: 20px;
+    border: 6px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.search-input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+
+    border: none;
+    background: var(--primary-color-light);
+    font-size: 16px;
+    min-height: 30px;
+    max-width: 250px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.category {
+    margin-left: 10px;
+    background: var(--primary-color-light);
+    border: none;
+    border-radius: 10px;
+    min-height: 30px;
+}
+
+body.dark .search-input {
+    color: var(--text-color);
+}
+
+body.dark .category {
+    color: var(--text-color);
 }
 
 
