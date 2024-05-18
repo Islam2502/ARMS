@@ -5,20 +5,29 @@ const body = document.querySelector("body"),
     modeSwitch = document.querySelector(".toggle-switch"),
     modeText = document.querySelector(".mode-text");
 
-    toggle.addEventListener("click", () => {
-        sidebar.classList.toggle("close")
-    })
+toggle.addEventListener("click", () => {
+    sidebar.classList.toggle("close")
+});
 
-    modeSwitch.addEventListener("click", () => {
-        body.classList.toggle("dark")
+modeSwitch.addEventListener("click", () => {
+    body.classList.toggle("dark");
 
-    
-    if (body.classList.contains("dark")) {
-        modeText.innerText = "Светлая тема"
-    } else {
-        modeText.innerText = "Темная тема"
-    }
-    })
+if (body.classList.contains("dark")) {
+    modeText.innerText = "Светлая тема"
+    localStorage.setItem("darkMode", "true");
+} else {
+    modeText.innerText = "Темная тема"
+    localStorage.setItem("darkMode", "false");
+}
+});
+
+// Проверка, была ли установлена темная тема при предыдущем посещении
+const isDarkMode = localStorage.getItem("darkMode") === "true";
+
+// Установка класса "dark" для body, если темная тема была установлена ранее
+if (isDarkMode) {
+  body.classList.add("dark");
+}
 
 
 // Здесь будет скрипт по поиску значений в таблице
