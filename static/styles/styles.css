@@ -462,4 +462,61 @@ body.dark .category {
 }
 
 
+.request-table th {
+    cursor: pointer;
+}
+
+.request-table .th-sort-asc::after {
+    content: "\25b4"
+}
+
+
+.request-table .th-sort-desc::after {
+    content: "\25be"
+}
+
+.request-table .th-sort-asc::after,
+.request-table .th-sort-desc::after {
+    margin-left: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.request-table .th-sort-asc,
+.request-table .th-sort-desc {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.index-buttons {
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+}
+
+.page-nums {
+    /* display: inline-grid; */
+    margin-right: 10px;
+    margin-left: 10px;
+    /* padding-right: 10px;
+    padding-left: 10px; */
+
+}
+
+.page-selector, .page-num {
+
+    padding: 5px 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.some-empty {
+    padding: 5px;
+}
 

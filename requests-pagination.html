@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="static/styles/styles.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <title>Статистика</title>
+</head>
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="static/logo.png" alt="logo">
+                </span>
+
+                <div class="text header-text">
+                    <span class="name">МТС ДСВК</span>
+                    <span class="profession">Панель управления</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+                <li class="search-box">
+                        <i class='bx bx-search-alt-2 icon' ></i>
+                        <input class="nav-text" placeholder="Поиск..."></input>
+                </li>
+                <ul class="menu-links">
+                    <li class="nav-links">
+                        <a href="/main.html">
+                            <i class='bx bx-home icon' ></i>
+                            <span class="nav-text text">Главная</span>
+                        </a>
+                    </li>
+                    <li class="nav-links">
+                        <a href="/requests.html">
+                            <i class='bx bx-bar-chart-alt-2 icon' ></i>
+                            <span class="nav-text text">Запросы</span>
+                        </a>
+                    </li>
+                    <li class="nav-links">
+                        <a href="/deadlines.html">
+                            <i class='bx bx-bell icon' ></i>
+                            <span class="nav-text text">Дедлайны</span>
+                        </a>
+                    </li>
+                    <li class="nav-links">
+                        <a href="/analytics.html">
+                            <i class='bx bx-pie-chart-alt icon' ></i>
+                            <span class="nav-text text">Аналитика</span>
+                        </a>
+                    </li>
+                    <li class="nav-links">
+                        <a href="/about.html">
+                            <i class='bx bx-book-content icon' ></i>
+                            <span class="nav-text text">О ДСВК</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+
+                <li class="">
+                    <a href="#">
+                        <i class='bx bx-log-out icon' ></i>
+                        <span class="nav-text text">Выйти</span>
+                    </a>
+                </li>
+
+                <li class="mode">
+                    <div class="moon-sun">
+                        <i class='bx bx-moon icon moon' ></i>
+                        <i class='bx bx-sun icon sun' ></i>
+                    </div>
+                    <span class="mode-text text">Темная тема</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+            
+            </div>
+            
+        </div>
+
+    </nav>
+
+    <section class="home">
+        <div class="text">Запросы</div>
+        <div class="tickets-list">
+
+            <div class="search-panel">
+                <div class="search-mini-box">
+                    <i class='bx bx-search-alt-2 icon' ></i>
+                    <input class="search-input" type="search" placeholder="Поиск">
+                </div>
+
+                <div class="select-box">
+                    <select class="category" name="" id="category">
+                        <option value="0">№ КП</option>
+                        <option value="1">Приоритет</option>
+                        <option value="2">Ответственный</option>
+                        <option value="3">Статус</option>
+                        <option value="4">Запр. документы</option>
+                        <option value="5">Контакты</option>
+                    </select>
+                </div>
+
+
+            </div>
+
+            <div class="request-table-box">
+            <table class="request-table">
+                <thead class="request-table-head">
+                  <tr>
+                    <th>№ КП</th>
+                    <th>Приоритет</th>
+                    <th>Ответственный</th>
+                    <th>Статус</th>
+                    <th>Дата запроса</th>
+                    <th>Ожид. дата</th>
+                    <th>Факт. дата</th>
+                    <th class="requested-docs">Запрошенные документы</th>
+                    <th>Контакты</th>
+                    <th>Статус ДСВК</th>
+                    <th>Трудозатраты</th>
+                  </tr>
+                </thead>
+                <tbody class="table-data">
+                  <tr>
+                    <td>22.04</td>
+                    <td>Стандартный</td>
+                    <td>Саликов Ислам</td>
+                    <td>Не предоставлено</td>
+                    <td>01.01.2023</td>
+                    <td>15.01.2023</td>
+                    <td>-</td>
+                    <td class="requested-docs">
+                        Условий высшего подготовки позволяет финансовых плановых соображения подготовки также финансовых повседневная условий соображения условий. Поставленных сфера количественный поставленных и в и собой форм административных проверки требуют финансовых и соображения и позволяет реализации роль роль задач. 
+                        Занимаемых организационной количественный место практика существенных позволяет организации.
+                        Постоянный рост подготовки направлений выполнять развития.
+                        Нашей высшего количественный же форм развития.
+                        Занимаемых важную а поставленных рамки поставленных сложившаяся да.</td>
+                    <td>Аудитор аудиторович</td>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>17.04</td>
+                    <td>Стандартный</td>
+                    <td>Саликов Ислам</td>
+                    <td>Не предоставлено</td>
+                    <td>02.01.2023</td>
+                    <td>16.01.2023</td>
+                    <td>-</td>
+                    <td class="requested-docs">
+                        Условий высшего подготовки позволяет финансовых плановых соображения подготовки также финансовых повседневная условий соображения условий. Поставленных сфера количественный поставленных и в и собой форм административных проверки требуют финансовых и соображения и позволяет реализации роль роль задач. 
+                        Занимаемых организационной количественный место практика существенных позволяет организации.
+                        Постоянный рост подготовки направлений выполнять развития. 
+                        Нашей высшего количественный же форм развития. 
+                        Занимаемых важную а поставленных рамки поставленных сложившаяся да.</td>
+                    <td>Аудитор аудиторович</td>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+
+                  <tr>
+                    <td>18.04</td>
+                    <td>Стандартный</td>
+                    <td>Саликов Ислам</td>
+                    <td>Не предоставлено</td>
+                    <td>03.01.2023</td>
+                    <td>17.01.2023</td>
+                    <td>-</td>
+                    <td class="requested-docs">
+                        Условий высшего подготовки позволяет финансовых плановых соображения подготовки также финансовых повседневная условий соображения условий. Поставленных сфера количественный поставленных и в и собой форм административных проверки требуют финансовых и соображения и позволяет реализации роль роль задач. 
+                        Занимаемых организационной количественный место практика существенных позволяет организации.
+                        Постоянный рост подготовки направлений выполнять развития. 
+                        Нашей высшего количественный же форм развития. 
+                        Занимаемых важную а поставленных рамки поставленных сложившаяся да.</td>
+                    <td>Аудитор аудиторович</td>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+
+                  <tr>
+                    <td>19.04</td>
+                    <td>Стандартный</td>
+                    <td>Саликов Ислам</td>
+                    <td>Не предоставлено</td>
+                    <td>04.01.2023</td>
+                    <td>18.01.2023</td>
+                    <td>-</td>
+                    <td class="requested-docs">
+                        Условий высшего подготовки позволяет финансовых плановых соображения подготовки также финансовых повседневная условий соображения условий. Поставленных сфера количественный поставленных и в и собой форм административных проверки требуют финансовых и соображения и позволяет реализации роль роль задач. 
+                        Занимаемых организационной количественный место практика существенных позволяет организации.
+                        Постоянный рост подготовки направлений выполнять развития. 
+                        Нашей высшего количественный же форм развития. 
+                        Занимаемых важную а поставленных рамки поставленных сложившаяся да.</td>
+                    <td>Аудитор аудиторович</td>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+        </div>
+
+        <div class="footer">
+            <span>Показ от 1 до 10 из 30 запросов</span>
+            <div class="index-buttons">
+                <button class="page-selector" onclick="renderPageNums()">Предыдущая</button>
+                <!-- Here we will paste page numbers -->
+                <div class="page-nums" id="nums">
+                    <button class="page-num" data-index="1" id="num">1</button>
+                    <button class="page-num" data-index="2" id="num">2</button>
+                    <button class="page-num" data-index="3" id="num">3</button>
+                    <button class="page-num" data-index="4" id="num">4</button>
+                </div>
+                <button class="page-selector">Следующая</button>
+            </div>
+
+        </div>
+
+    </section>
+    
+    <script src="static/scripts/paginator.js"></script>
+    <script src="static/scripts/script.js"></script>
+
+</body>
+</html>
