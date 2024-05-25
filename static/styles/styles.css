@@ -292,20 +292,25 @@ body.dark .switch::before{
 }
 
 .home {
+
     position: relative;
     height: 100vh;
     left: 250px;
     width: calc(100% - 250px);
     background: var(--body-color);
-    /* background: red; */
-    transition: var(--tran-05);
+
+    transition: var(--tran-02);
+
+    padding-left: 15px;
+    padding-right: 25px;
+
 }
 
 .home .text {
     font-size: 30px;
     font-weight: 500;
     color: var(--text-color);
-    padding: 8px 40px;
+    padding: 8px 10px 5px;
 }
 
 .sidebar.close ~ .home {
@@ -318,10 +323,10 @@ body.dark .switch::before{
     /* color: #161313; 
     border-color: 161313} */
 
-.request-table-box {
+/* .request-table-box {
     margin-left: 10px;
     margin-right: 20px;
-}
+} */
 
 .request-table {
     width: 100%;
@@ -406,7 +411,7 @@ div .search-panel {
     /* padding-left: 30px;
     padding-right: 30px; */
     /* background: var(--primary-color-light); */
-    margin-left: 18px;
+    margin-left: 2px;
     margin-right: 18px;
 
 }
@@ -497,7 +502,7 @@ body.dark .category {
 .index-buttons {
     display: flex;
     flex-direction: row;
-    margin-right: 20px;
+    /* margin-right: 20px; */
 }
 
 .page-nums {
@@ -520,3 +525,56 @@ body.dark .category {
     padding: 5px;
 }
 
+.pagination-info {
+    margin-left: 2px;
+}
+
+
+.request-box {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+
+
+.request-box .request-describe,
+.request-box .request-contacts,
+.request-box .request-status,
+.request-box .request-comments {
+    /* margin: 5px; */
+    background-color: white;
+    border: 20px;
+    border-color: black;
+    border-radius: 10px;
+    min-width: 50px;
+    min-height: 275px;
+}
+
+body.dark .request-box .request-describe,
+body.dark .request-box .request-contacts,
+body.dark .request-box .request-status,
+body.dark .request-box .request-comments {
+    background-color: rgb(77, 77, 77);
+}
+
+
+.request-title-block {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text-color);
+    padding: 8px 10px 5px;
+}
+
+
+.contacts-minibox {
+    display: flex;
+    margin: 5px 10px 5px;
+    
+}
+
+.contacts-minibox > i, 
+.contacts-minibox > p {
+    color: var(--text-color);
+    padding: 0 5px;
+}

@@ -103,6 +103,7 @@
                 <div class="search-mini-box">
                     <i class='bx bx-search-alt-2 icon' ></i>
                     <input class="search-input" type="search" placeholder="Поиск">
+                    <i class='bx bx-x' id="clear-search-input"></i>
                 </div>
 
                 <div class="select-box">
@@ -111,8 +112,8 @@
                         <option value="1">Приоритет</option>
                         <option value="2">Ответственный</option>
                         <option value="3">Статус</option>
-                        <option value="4">Запр. документы</option>
-                        <option value="5">Контакты</option>
+                        <option value="7">Запр. документы</option>
+                        <option value="8">Контакты</option>
                     </select>
                 </div>
 
@@ -218,7 +219,7 @@
         </div>
 
         <div class="footer">
-            <span>Показ от 1 до 10 из 30 запросов</span>
+            <span class="pagination-info">Показ от 1 до 10 из 30 запросов</span>
             <div class="index-buttons">
                 <button class="page-selector" onclick="renderPageNums()">Предыдущая</button>
                 <!-- Here we will paste page numbers -->

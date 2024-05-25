@@ -7,7 +7,7 @@ const body = document.querySelector("body"),
 
 toggle.addEventListener("click", () => {
     sidebar.classList.toggle("close")
-});
+}); 
 
 modeSwitch.addEventListener("click", () => {
     body.classList.toggle("dark");
@@ -34,11 +34,16 @@ if (isDarkMode) {
 var searchBar = document.querySelector(".search-input");
 var category = document.querySelector(".category");
 var tableBody = document.querySelector(".table-data");
-var tableData = tableBody.innerHTML;
+const tableData = tableBody.innerHTML;
 // console.log(searchBar, category);
+
+const tableBodyOriginal= document.querySelector(".table-data");
+
+const xClearBox = document.getElementById("clear-search-input");
 
 // search func
 const Search = () => {
+
     tableBody.innerHTML = tableData;
     let rows = tableBody.children;
     console.log(rows)
@@ -52,24 +57,43 @@ const Search = () => {
     let categoryNumber = Number(category.value);
     // console.log(categoryNumber)
     let searchText = searchBar.value.toLowerCase();
+    // console.log(searchText)
 
     for (let i = 0; i < rows.length; i++) {
-        const currentRowText = rows[i].children[categoryNumber].innerText
-        // console.log("currentRowText :" + currentRowText)
+        const currentRowText = rows[i].children[categoryNumber].innerText.toLowerCase()
+        // console.log("currentRowText: " + currentRowText)
 
-        // console.log(currentRowText.indexOf(searchText))
-        if(currentRowText.indexOf(searchText) > -1) {
+        console.log("currentRowText.indexOf(searchText): " + currentRowText.indexOf(searchText))
+        if(currentRowText.indexOf(searchText) != -1) {
+            // console.log("rows[i].outerHTML: " + rows[i].outerHTML)
             filteredRows += rows[i].outerHTML;
-            // console.log(filteredRows)
-        }
 
+        }
+        // console.log("filteredRows: " + filteredRows)
         tableBody.innerHTML = filteredRows;
 
     }
 
 }
 
-// searchBar.addEventListener("click", Search)
+const Hello = () => {
+    // searchBar = document.querySelector(".search-input");
+    // category = document.querySelector(".category");
+    // tableBody = document.querySelector(".table-data");
+    console.log('Hello'); 
+}
+
+const ClearSearch = (event) => {
+    if (event.key === 'Backspace') {
+        
+        // Выводим сообщение в консоль
+        console.log('Нажата клавиша Backspace'); 
+
+      }
+}
+
+xClearBox.addEventListener("click", Hello);
+searchBar.addEventListener("keydown", ClearSearch);
 searchBar.addEventListener("input", Search)
 category.addEventListener("change", Search)
 
